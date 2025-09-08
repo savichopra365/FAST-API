@@ -6,13 +6,7 @@ import uvicorn
 import os
 
 app = FastAPI()
-
-# Path to your text file
-# For demonstration, let's create a dummy file
 TEXT_FILE_PATH = "sample.txt"
-
-
-# ----------------------------------------
 
 async def read_file_in_realtime(file_path: str):
     """
@@ -106,6 +100,5 @@ async def read_root():
     </html>
     """
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+
 
